@@ -49,7 +49,7 @@ defmodule MapLibre do
 
   @maptiler_key "Q4UbchekCfyvXvZcWRoU"
   @to_kebab Utils.kebab_case_properties()
-  @geometries [Geo.Point, Geo.LineString, Geo.Polygon, Geo.GeometryCollection]
+  @geometries [Geo.Point, Geo.LineString, Geo.MultiPolygon, Geo.Polygon, Geo.GeometryCollection]
   @query_base "https://nominatim.openstreetmap.org/search?format=geojson&limit=1&polygon_geojson=1"
 
   defstruct spec: %{}
